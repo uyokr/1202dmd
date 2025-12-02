@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BEEFLIX</title>
+  <style type= "text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;800;900&display=swap');
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: 'Pretendard', sans-serif; background: black; color: white; overflow-x: hidden;}
+    nav {position: fixed; width: 100%; height: 70px; display: flex; align-items: center; padding: 0 40px; background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(8px); z-index: 999;}
+    .nav-logo {font-size: 2rem; font-weight: 900; color: #ffce39; letter-spacing: -1px;}
+    nav ul {display: flex; list-style: none; margin-left: auto; gap: 25px;}
+    nav ul li a {text-decoration: none; font-size: 1rem; color: #fff;}
+    nav ul li a:hover {color: #ffce39;}
+    footer {padding: 60px; background: #000; text-align: center; color: gray; margin-top:100px;}
+    footer p {margin: 6px 0;}
+
+    html {scroll-behavior: smooth;}
+
+
+    .wrap {width: 1200px; margin: 0 auto;}
+
+
+    .profile {height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;}
+    .profile .wrap {height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+    .BEEFLIX {font-size: 3rem; font-weight: 900; color: #ffce39;}
+    .choose {margin-top: 20px; font-size: 1.2rem;}
+    .profilebox {display: flex; gap: 40px; margin-top: 60px;}
+    .icon {width: 150px; height: 150px; border-radius: 10px; background-size: cover;background-position: center; transition: 0.3s; cursor: pointer;}
+    .icon:hover {transform: scale(1.08); opacity: 0.8;}
+    .red {background-image: url('red.png');}
+    .yellow {background-image: url('yellow.png');}
+    .green{background-image: url('green.png');}
+    .blue {background-image: url('blue.png');}
+
+    .mainpage {height: 100vh; background: url('https://cdn.midjourney.com/cab7919e-dae2-4e60-8844-6a6c7a8a2c8a/0_3.png') center /cover no-repeat; display: flex; align-items: flex-end; padding: 0 0 150px 80px; position: relative;}
+    .mainpage::after {content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2));}
+    .mainpagecontent {position: relative; z-index: 5; max-width: 650px; padding-right: 40px}
+    .BEE {font-size: 5rem;  font-weight: 900; color: #ffce39; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8); line-height: 1.3;}
+    .documentary {margin-top: 20px; max-width: 480px; font-size: 1.3rem; opacity: 0.9; line-height: 1.8;}
+    .button {margin-top: 40px; display: inline-block; background: #ffce39; color: #000; padding: 14px 28px; font-weight: 700; border-radius: 6px; font-size: 1.2rem;text-decoration: none;}
+    .button:hover {background: #ffe27b;}
+
+    .episode {padding: 150px 80px;}
+    .title {font-size: 5rem; font-weight: 900; margin-bottom: 70px;color: #ffce39;}
+    .number {color: #999; margin-bottom: 10px; font-size: 1.5rem; letter-spacing: 1px;}
+    .caption {font-size: 1.2rem; line-height: 1.8; max-width: 1000px; opacity: 0.9; margin-bottom: 100px;}
+    .video {width: 70%; box-shadow: 0px 0px 30px rgba(0,0,0,0.5);margin: 0 auto 60px auto; display: block;}
+
+    .center {text-align: center;}
+    .captionstyle {margin: 0 auto 60px; text-align: center; width: 100%; font-style: italic; padding: 40px;line-height: 1.8;}
+    .captionstyle p {max-width: 1000px; margin: 0 auto 60px; text-align: center; font-style: italic;}   
+  </style>
+</head>
+
+<body>
+
+
+  <nav>
+    <div class="nav-logo">BEEFlIX</div>
+    <ul>
+      <li><a href="#ep1">Episode 1</a></li>
+      <li><a href="#ep2">Episode 2</a></li>
+      <li><a href="#ep3">Episode 3</a></li>
+      <li><a href="#ep4">Episode 4</a></li>
+    </ul>
+  </nav>
+
+
+<section class="profile">
+  <div class="profile wrap">
+  <h1 class="BEEFLIX">BEEFLIX</h1>
+  <p class="choose">화면을 시청할 프로필을 선택하세요.</p>
+  <div class="profilebox">  
+  <a href="#mainpage" class="icon red"></a>
+  <a href="#mainpage" class="icon yellow"></a>
+  <a href="#mainpage" class="icon green"></a>
+  <a href="#mainpage" class="icon blue"></a>
+</div>
+</section>
+
+
+<section class="mainpage" id="mainpage">
+    <div class="wrap">
+    <div class="mainpagecontent">
+      <h1 class="BEE">꿀벌집이<br>다 Bee었어요!</h1>
+      <h2 class="documentary">
+        BEEFLIX ORIGINAL DOCUMENTARY</h2>
+      <p>생태계를 지키는 작고 위대한 존재, 꿀벌. 하지만 지금, 그들이 전 세계에서 사라지고 있다.
+      </p>
+      <a href="#ep1" class="button">▶ 지금 시청하기</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="episode" id="ep1">
+    <div class="wrap">
+    <p class="number">EPISODE 1</p>
+    <h2 class="title">Bee밀 : 꿀벌은 춤으로 말한다</h2>
+    <p class="caption">
+      꿀벌이 그냥 나는 것처럼 보이지만, 사실 춤을 추는 것이다.<br>
+      8자 형태의 이 춤은 "워글댄스"라고 불리는데, 이것으로 꿀벌들은 소통한다.<br>
+      몸을 떠는 시간은 ‘얼마나 멀리 있는지’, 회전 각도는 ‘어디로 가야 하는지’, 그리고 반복 속도는 ‘그 꽃이 얼마나 좋은지’를 알려준다.
+    </p>
+    <video class="video" autoplay muted loop playsinline>
+  <source src="waggle.mp4" type="video/mp4">
+</video>
+</section>
+
+  <section class="episode" id="ep2">
+    <div class="wrap">
+    <p class="number">EPISODE 2</p>
+    <h2 class="title">Bee하인드 : 그 춤은 생태계를 살린다.</h2>
+    <p class="caption">
+      이 춤은 단순히 정보 전달로만 끝나지 않는다.<br>
+      꿀벌은 이 춤으로 종자식물에서 수술의 화분이 암술머리에 옮겨 붙는 수분을 진행할 수 있다.
+    </p>
+   <video class="video" autoplay muted loop playsinline>
+  <source src="nature.mp4" type="video/mp4">
+</video>
+    <video class="video" autoplay muted loop playsinline>
+  <source src="nature2.mp4" type="video/mp4">
+</video>
+
+<section class="captionstyle">
+<p class="italic">
+      그덕에 자연 생태계가 유지되고 우리는 편안한 삶을 살아왔다.<br>
+      하지만 이 삶이 영원할지에 대해 문제가 제기되는데...
+    </p>
+</section>
+</div>
+</section>
+
+  <section class="episode" id="ep3">
+    <div class="wrap">
+    <div class="number">EPISODE 3</div>
+    <div class="title">Bee상 : 꿀벌이 사라지고 있다.</div>
+
+    <p class="caption">
+      농약·기후 위기·서식지 파괴·바이러스 등 꿀벌 군집 붕괴 현상(CCD)을 가속화 되고있다.<br>
+      한국의 경우, 2022~2023년 겨울에만 약 78억 마리의 꿀벌이 집단 폐사하며 국내 양봉 산업에 큰 타격을 주었다.<br>
+      미국과 유럽에서도 매년 30~40%의 벌집이 사라지는 ‘군집붕괴현상’이 반복되며 수분 곤충의 75%가 감소한 지역도 보고되고 있다.
+    </p>
+    <video class="video" autoplay muted loop playsinline>
+  <source src="noplant2.mp4" type="video/mp4">
+</video>
+<section class="captionstyle">
+    <p class="captionstyle italic">
+      이러한 상황이 지속된다면 생태계는 무너지고, 인류 역시 지금처럼 살아갈 수가 없다.<br>
+      일부 연구자들은 “꿀벌이 사라지면 인류는 몇 년도 못 버틸 것”이라고 말하기도 한다.<br>
+      작은 균열은 곧 거대한 붕괴로 이어지고, 우리가 당연하게 여겼던 일상이 서서히 무너지게 되는데…
+    </p>
+</section>
+    <video class="video" autoplay muted loop playsinline>
+  <source src="human.mp4" type="video/mp4">
+</video>
+<section class="captionstyle">
+    <p class="captionstyle italic">
+      우리가 매일 보는 자연의 풍경,<br>
+      우리가 매일 먹는 식탁 위의 음식들,<br>
+      우리가 매일 마시는 깨끗한 공기까지,<br>
+      '당연했던 것'들이, 한순간에 ‘없어도 되는 것’처럼 무너져 내리게 된다.
+</section>
+  </section>
+
+
+  <section class="episode" id="ep4">
+    <div class="wrap">
+    <div class="number">EPISODE 4</div>
+    <div class="title">Bee결 : 일상을 지키는 방법</div>
+
+    <p class="caption">
+      꿀벌 군집 붕괴는 꿀벌만의 문제가 아니라 우리의 일상과 연결되어 있다.<br>
+      때문에 우리는 지금부터라도 꿀벌을 지켜야 한다. 무슨 방법이 있을까?<br>
+    </p>
+    <video class="video" autoplay muted loop playsinline>
+  <source src="localhoney.mp4" type="video/mp4">
+</video>
+<section class="captionstyle">
+    <p class="captionstyle italic">
+      최대한 로컬 꿀을 살 것.<br>
+      양봉가가 무너지면 벌들을 돌볼 사람이 없다.
+    </p>
+</section>
+    <video class="video" autoplay muted loop playsinline>
+  <source src="plant.mp4" type="video/mp4">
+</video>
+<section class="captionstyle">
+    <p class="captionstyle italic">
+      일상 속에 식물을 심는 방법도 있다.<br>
+      이 참에 식물을 한 번 심어보는 건 어떨까?
+    </p>
+</section>
+</video>
+    <video class="video" autoplay muted loop playsinline>
+  <source src="outro.mp4" type="video/mp4">
+</video>
+<section class="captionstyle">
+    <p class="captionstyle italic">
+      “우리는 함께 살아가는 법을 알고 있다.<br>
+      꿀벌도, 자연도, 그리고 우리도.”
+    </p>
+</section>
+</div>
+</section>
+    
+
+  <footer>
+    <div class="wrap">
+    <p>BEEFLIX Original — 꿀벌집이 다 Bee었어요!</p>
+    <p>Designed by 시각디자인전공 24101029 윤동주</p>
+    <p>© 2025 Bee Documentary Project</p>
+  </footer>
+
+</body>
+</html>
